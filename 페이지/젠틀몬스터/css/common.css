@@ -1,0 +1,40 @@
+/* 초기화 선언 */
+/* HTML5 display-role reset for older browsers */ 
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {display: block;}
+ol, ul, li {list-style-type: none; display: inline-block;}
+blockquote, q {quotes: none;}
+blockquote:before, blockquote:after, q:before, q:after {content: ''; content: none;}
+table {border-collapse: collapse; border-spacing: 0;}
+a:-webkit-any-link, a:link, a:visited, a:hover { color: none; text-decoration: none; cursor: pointer;}
+a {text-decoration: none; color: inherit;}
+img {vertical-align: top;} 
+input.hide-clear[type=search]::-ms-clear, input.hide-clear[type=search]::-ms-reveal {display: none; width: 0; height: 0;}
+/* clears the 'X' from Chrome */
+body em {font-style: normal; font-weight: 700;}
+body {position: relative; display: block; width: 100%; height: 100%; margin: 0 auto; font-family: "AppleSDGothicNeo"; font-weight: 300; line-height: 1; text-decoration: none; letter-spacing: -0.6px; text-size-adjust: 100%;}
+body, header, div, h1, h2, h3, h4, h5, h6, ul, ol, li, dl, dt, dd, p, form, fieldset, table, tr, th, td, a, input, span, section, article {box-sizing: border-box;}
+button {color:none;}
+html, body, div, span, ul, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {margin: 0; padding: 0; border: 0; font-size: 100%; vertical-align: baseline; box-sizing: border-box;}
+input.hide-clear[type="search"]::-webkit-search-decoration,
+input.hide-clear[type="search"]::-webkit-search-cancel-button,
+input.hide-clear[type="search"]::-webkit-search-results-button,
+input.hide-clear[type="search"]::-webkit-search-results-decoration {display: none;}
+button {appearance: none; -webkit-appearance: none; padding:none; color:#fff; border: none; background: none; cursor: pointer;}
+input {border: none;}
+
+/* font-family */
+@font-face {
+  font-family: "AppleSDGothicNeo";
+  src: url(../font/AppleSDGothicNeoM.ttf);
+  unicode-range: "U+0041-005A", "U+0061-007A","U+AC00-D7A3","U+0030-0039";
+}
+
+/* 공통 클래스 */
+.parentsInner {display: block; width: 1920px; margin: 0 auto;}
+.inner {display: block; width: 1860px; margin: 0 auto;}
+.centerInner {width: 980px; margin: 0 auto;}
+.clear::after {content: ''; display: block; clear: both;}
+.forHelpTxt {display: block; width: 100%; text-align: center;}
+.supportTxt {display: block; margin-bottom: 30px; font-size: 18px; font-weight: 700; text-align: center;} 
+.supportP {display: block; margin:30px auto 100px; font-size: 40px;}
+
