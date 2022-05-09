@@ -1,0 +1,195 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>웹퍼블리셔 포트폴리오 김보미</title>
+
+	<link rel="stylesheet" href="css/smp.css">
+	<link rel="stylesheet" href="css/style.css">
+
+	<script src="js/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/animation.gsap.js"></script>
+
+	<script src="js/custom.js"></script>
+
+	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap"
+		rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;600;700&display=swap"
+		rel="stylesheet">
+
+	<link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+
+	<script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+
+</head>
+
+
+<body>
+	<div class="Loader_inner">
+		<div class="Loader">
+			<div class="Loader-circle"></div>
+			<div class="Loader-blob"></div>
+		</div>
+
+		<svg xmlns="http://www.w3.org/2000/svg" version="1.1" style="display: none;">
+			<defs>
+				<filter id="tooltip-filter">
+					<feGaussianBlur in="SourceGraphic" stdDeviation="9" result="blur" />
+					<feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 19 -9" result="goo" />
+					<feComposite in="SourceGraphic" in2="goo" operator="atop" />
+				</filter>
+			</defs>
+		</svg>
+		<span>Loading</span>
+	</div>
+
+
+	<header>
+		<div class="header">
+			<h1><a href="/">Kimbomi</a></h1>
+			<div class="menu_btn">
+				<span></span>
+				<span></span>
+			</div>
+			<div class="menu_bg">
+				<div class="menu_bg_inner">
+					<div class="gnb">
+						<ul>
+							<li><a href="javascript:void(0)">Main</a></li>
+							<li><a href="javascript:void(0)">WOOALONG</a></li>
+							<li><a href="javascript:void(0)">Aesop</a></li>
+							<li><a href="javascript:void(0)">Tiffany&Co</a></li>
+							<li><a href="javascript:void(0)">Fila</a></li>
+							<li><a href="javascript:void(0)">Keds</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+
+
+	<div class="swiper-container">
+		<div class="swiper-wrapper">
+			<div class="swiper-slide section01">
+				<div class="bg"></div>
+				<!-- <div class="bg_opac"></div> -->
+				<div class="main_intro">
+					<span class="txt01">Web Publishing</span>
+					<div class="txt02"><strong><span><i>긍</i><i>정</i><i>적</i><i>인</i></span> 퍼블리셔 <br>김보미 입니다.</strong></div>
+					<p>
+						항상 "할 수 있다"는 자신감으로 <br />스스로 발전하는 모습을 보여드리겠습니다.
+					</p>
+					<div class="btn_wrap">
+						<a href="resume.pdf" class="btn01">
+							<span>Go To portfolio</span>
+						</a>
+					</div>
+				</div>
+			</div>
+			<div class="swiper-slide section02">
+				<div class="bg"></div>
+				<div class="bg_opac"></div>
+				<div class="main_intro">
+					<span class="txt01"><span>PC</span>사이트 리뉴얼</span>
+					<div class="txt02"><strong>WOOALONG</strong></div>
+					<p>
+						제작기간 : 22.01.24 - 22.01.28<br>
+						기획 100% / 디자인 100% / 퍼블리싱 100%
+					</p>
+					<div class="btn_wrap">
+						<a href="page/wooalong/index.html" class="btn01 btn_base btn_ef01" target="_blank">
+							<span>사이트 바로가기</span>
+						</a>
+					</div>
+				</div>
+			</div>
+
+			<div class="swiper-slide section03">
+				<div class="bg"></div>
+				<div class="bg_opac"></div>
+				<div class="main_intro">
+					<span class="txt01"><span>Mobile</span>사이트 리뉴얼</span>
+					<div class="txt02"><strong>Aesop</strong></div>
+					<p>
+						제작기간 : 22.01.31 - 22.02.04<br>
+						기획 100% / 디자인 100% / 퍼블리싱 100%
+					</p>
+					<div class="btn_wrap">
+						<a href="page/aesop/index.html" class="btn01 btn_base btn_ef01" target="_blank">
+							<span>사이트 바로가기</span>
+						</a>
+					</div>
+				</div>
+			</div>
+
+			<div class="swiper-slide section04">
+				<div class="bg"></div>
+				<div class="bg_opac"></div>
+				<div class="main_intro">
+					<span class="txt01"><span>Responsive</span>사이트 리뉴얼</span>
+					<div class="txt02"><strong>Tiffany&Co</strong></div>
+					<p>
+						제작기간 : 22.02.07 - 22.02.11<br>
+						기획 100% / 디자인 100% / 퍼블리싱 100%
+					</p>
+					<div class="btn_wrap">
+						<a href="page/tiffany_co/index.html" class="btn01 btn_base btn_ef01" target="_blank">
+							<span>사이트 바로가기</span>
+						</a>
+					</div>
+				</div>
+			</div>
+
+			<div class="swiper-slide section05">
+				<div class="bg"></div>
+				<div class="bg_opac"></div>
+				<div class="main_intro">
+					<span class="txt01"><span>Mobile</span>사이트 리뉴얼</span>
+					<div class="txt02"><strong>Fila</strong></div>
+					<p>
+						제작기간 : 22.02.14 - 22.02.18<br>
+						기획 100% / 디자인 100% / 퍼블리싱 100%
+					</p>
+					<div class="btn_wrap">
+						<a href="page/fila/index.html" class="btn01 btn_base btn_ef01" target="_blank">
+							<span>사이트 바로가기</span>
+						</a>
+					</div>
+				</div>
+			</div>
+
+			<div class="swiper-slide section06">
+				<div class="bg"></div>
+				<div class="bg_opac"></div>
+				<div class="main_intro">
+					<span class="txt01"><span>카페24 활용</span> PC사이트 리뉴얼</span>
+					<div class="txt02"><strong>Keds</strong></div>
+					<p>
+						제작기간 : 22.02.21 - 22.02.25<br>
+						기획 100% / 디자인 100% / 퍼블리싱 100%
+					</p>
+					<div class="btn_wrap">
+						<a href="http://qhal1231.cafe24.com/" class="btn01 btn_base btn_ef01" target="_blank">
+							<span>사이트 바로가기</span>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="swiper-pagination"></div>
+		<div class="page_control">
+			<span class="prev_btn">PREV</span>
+			<i></i>
+			<span class="next_btn">NEXT</span>
+		</div>
+	</div>
+
+
+</body>
+
+</html>

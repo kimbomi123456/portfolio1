@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tiffany & Co.</title>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xU+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <script src="js/jquery-cdn.js"></script>
+  <script src="js/index_js01.js"></script>
+
+  <!-- 스와이퍼 -->
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+  <!--레터링js-->
+  <script src="js/jquery.lettering-0.6.1.min.js"></script>
+  <!-- 트윈맥스 -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
+  <!--scrollmagic-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script>
+  <!--gsap-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/animation.gsap.js"></script>
+  <!--aos-->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <!-- Font Awesome -->
+  <script src="https://kit.fontawesome.com/f8a0a95034.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_four@1.2/JalnanOTF00.woff​"></script>
+  <!--폰트-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://indestructibletype.com/fonts/Bodoni/Bodoni.css" type="text/css" charset="utf-8" />
+  
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+  <header>
+    <div class="header">
+      <div class="hamburger">
+        <span class="header_m"></span>
+        <span class="header_m"></span>
+        <span class="header_m"></span>
+      </div>
+
+      <a href="" class="logo"></a>
+
+      <div class="hd_icon">
+        <img src="./images/icn-email-b.png" alt="">
+      </div>
+    </div>
+  </header>
+
+  <aside id="left_menu">
+    <div class="rm_icon">
+      <div class="close_btn">
+        <span></span>
+        <span></span>
+      </div>
+      <a href="" class="logo bg_f"></a>
+    </div>
+    <div class="aside">
+      <div class="menu">
+        <ul class="menu_ul">
+          <li class="menu_li">
+            <a href="javascript:void(0);" class="ctg_name">
+              <p>About</p>
+            </a>
+          </li>
+
+          <li class="menu_li">
+            <a href="javascript:void(0);" class="ctg_name">
+              <p>Jewelry</p>
+            </a>
+          </li>
+
+          <li class="menu_li">
+            <a href="javascript:void(0);" class="ctg_name">
+              <p>Couples rings</p>
+            </a>
+          </li>
+
+          <li class="menu_li">
+            <a href="javascript:void(0);" class="ctg_name">
+              <p>Watch</p>
+            </a>
+          </li>
+
+          <li class="menu_li">
+            <a href="javascript:void(0);" class="ctg_name">
+              <p>Perfume</p>
+            </a>
+          </li>
+
+          <li class="menu_li">
+            <a href="javascript:void(0);" class="ctg_name">
+              <p>For men</p>
+            </a>
+          </li>
+
+          <li class="menu_li">
+            <a href="javascript:void(0);" class="ctg_name">
+              <p>Gift</p>
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <span class="menu_date">© T&CO. 2022</span>
+
+      <div class="right_txt">
+        <div class="rt_1st_wrap">
+          <div class="rt_1st">
+            <p>SEARCH</p>
+            <span class="adress">가까운 주얼리 매장 찾기<br>
+              이제 카카오톡 선물하기에서도 티파니를 만나보실 수 있습니다. <br>여기를 클릭하여 바로 구매하세요.<br>
+            </span>
+          </div>
+
+          <div class="rt_1st se">
+            <p>WITH US</p>
+            <span class="adress">
+              다이아몬드 상담 예약<br>
+              관리&수리 <br>
+              카탈로그<br>
+            </span>
+          </div>
+        </div>
+
+        <div class="rt_btn">
+          <span>View Map</span>
+        </div>
+
+        <div class="rt_3rd">
+          <i class="fas fa-heart"></i>
+          <span>티파니 고객 관리</span>
+        </div>
+      </div>
+    </div>
+  </aside>
+
+  <div class="dimmed_bg"></div>
+
+  <main>
+    <div class="container_wrap">
+      <div id="container1">
+        <div class="main_vis">
+
+          <div class="main_l">
+            <div class="main_txt">
+              <!--p class="mt_p">웨딩 링을 첫번째로 선보인 브랜드</p-->
+              <em class="mt_em"  data-aos="fade-left"  data-aos-duration="1500">ABOUT</em>
+              <em class="mt_em"  data-aos="fade-left"  data-aos-duration="1500" data-aos-delay="300">LOVE</em>
+              <em class="mt_em"  data-aos="fade-left" data-aos-duration="1500" data-aos-delay="600">1st BRAND</em>
+              <p class="mt_p_1"  data-aos="fade-up"  data-aos-duration="1000" data-aos-delay="900">당신의 러브 스토리를 가장 아름답게 완성할 수 있도록<br>티파니의 모든 다이아몬드는 변함없는 예술적 열정과<br> 기술적 정밀성을 담고 있습니다.</p>
+            </div>
+          </div>
+
+          <div class="main_r">
+            <div class="main_img">
+              <img src="./images/ring_main.jpg" alt="티파니앤코 반지">
+            </div>
+          </div>
+          <div class="main_btn">
+            <p class="main_btn_p">VIEW MORE</p>
+          </div>
+        </div>
+      </div> <!-- main_vis 끝 -->
+      <!-- container1 닫음  -->
+    </div>
+    <div class="ani_wrap01">
+      <p class="ani_txt01">everyone has</p>
+      <p class="ani_txt02"><span>dazzling</span> momments</p>
+    </div>
+    <div id="container2">
+      <div class="content">
+        <div class="con1_l"  data-aos="fade-up">
+          <img src="./images/bn01.jpg" alt="">
+        </div>
+        <div class="con1_r">
+          <div class="con1_txt">
+            <h1 class="con1_txt_h1">victoria</h1>
+            <p class="con1_txt_p">Tiffany HardWear</p>
+            <p class="con1_txt_p1">HardWear 컬렉션은 완벽한 텐션과 비율, <br>균형을 바탕으로 한 볼드한 디자인으로 시선을 사로잡습니다. </p>
+            <div class="con1_btn">
+              <span>VIEW MORE</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="con1_r">
+          <div class="con1_txt">
+            <h1 class="con1_txt_h1">peretti</h1>
+            <p class="con1_txt_p">Tiffany T</p>
+            <p class="con1_txt_p1">Tiffany T 컬렉션의 강력하고 입체적인 디자인과 함께 메시지를 표현해보세요.</p>
+
+            <div class="con1_btn">
+              <span>VIEW MORE</span>
+            </div>
+          </div>
+        </div>
+        <div class="con1_l"  data-aos="fade-up">
+          <img src="./images/bn02.jpg" alt="">
+        </div>
+      </div>
+      <div class="content">
+        <div class="con1_l"  data-aos="fade-up">
+          <img src="./images/bn03.jpg" alt="">
+        </div>
+        <div class="con1_r">
+          <div class="con1_txt">
+            <h1 class="con1_txt_h1">atlas</h1>
+            <p class="con1_txt_p">Atlas™<br> collection Renewal</p>
+            <p class="con1_txt_p1">로마 숫자 디테일 모티브는 1853년 티파니의 뉴욕 5번가플래그십 스토어의<br>아틀라스 시계에서
+              영감을 받아 완성되었습니다.</p>
+            <div class="con1_btn">
+              <span>VIEW MORE</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <!--  #container2 닫는 태그 -->
+    <div id="container3">
+      <div class="bk_bg">
+
+        <div class="bk_tit">
+          <em class="bk_em">2022.02.14 단 하루!</em>
+          <em class="bk_em1">Valentine's Day</em>
+        </div>
+        <div class="bk_tit_1">
+          <p  data-aos="fade-right" data-aos-duration="1000" data-aos-delay="100">A global</p>
+          <p  data-aos="fade-left" data-aos-duration="1000" data-aos-delay="300"><span class="color_6666ff">special</span> studio</p>
+            <p  data-aos="fade-right" data-aos-duration="1000" data-aos-delay="600">for a digital-first world.</p>
+        </div>
+        <div class="bk_img"  data-aos="fade-up"  data-aos-duration="1000" >
+          <img src="./images/card_img.png" alt="카드 이미지">
+        </div>
+        <div class="bk_btn">
+          <span class="about_btn">카드사 할인받으러 가기</span>
+        </div>
+      </div>
+    </div>
+    <!-- #container3닫음 -->
+    <div id="conatainer4">
+      <div class="prd_tit">
+        <p>tiffany note</p>
+      </div>
+
+      <div class="prd_wrap">
+        <div class="prd">
+          <div class="prd_img">
+            <img src="./images/prd_wrap .prd1.jpg" alt="">
+          </div>
+
+          <div class="prd_txt">
+            <em>뛰어난 디자인과 탁월한 장인 정신</em>
+            <p>Cut</p>
+            <span class="prd_span">다이아몬드의 패싯과 빛의<br/>상호작용하는 방식</span>
+            <span class="prd_btn">자세히 보기</span>
+          </div>
+        </div>
+
+        <div class="prd">
+          <div class="prd_img">
+            <img src="./images/prd_wrap .prd2.jpg" alt="">
+          </div>
+
+          <div class="prd_txt">
+            <em>웨딩링의 원조</em>
+            <p>Clarity</p>
+            <span class="prd_span">다이아몬드의 순도와 희소성</span>
+            <span class="prd_btn">자세히 보기</span>
+          </div>
+        </div>
+
+        <div class="prd">
+          <div class="prd_img">
+            <img src="./images/prd_wrap .prd3.jpg" alt="">
+          </div>
+
+          <div class="prd_txt">
+            <em>신뢰있는 브랜드의 가치</em>
+            <p>Color</p>
+            <span class="prd_span">화이트 다이아몬드의<br> 고유한 천연 색조</span>
+            <span class="prd_btn">자세히 보기</span>
+          </div>
+        </div>
+
+        <div class="prd">
+          <div class="prd_img">
+            <img src="./images/prd_wrap .prdt4.jpg" alt="">
+          </div>
+
+          <div class="prd_txt">
+            <em>믿을 수 있는 소싱</em>
+            <p>Carat</p>
+            <span class="prd_span">다이아몬드의 중량</span><br>
+            <span class="prd_btn">자세히 보기</span>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="web_award">
+        <!-- 좌측 -->
+        <div class="award_l">
+        </div>
+
+        <!-- 우측 -->
+        <div class="award_r">
+
+          <div class="award_r1">
+            <div class="award_r_txt">
+              <p>Tiffany's perfume</p>
+
+              <span>상큼하며 달콤한 블랙커런트 향<br/>
+                티파니 로즈 골드 오 드 퍼퓸을 소개합니다.</span>
+
+              <p class="award_btn">VIEW MORE</p>
+            </div>
+
+            <div class="award_r_img">
+              <img src="./images/bot_bn01.jpg" alt="">
+
+            </div>
+          </div>
+
+          <div class="award_r2">
+            <div class="award_r_img">
+              <img src="./images/bot_bn02.jpg" alt="">
+            </div>
+
+            <div class="award_r_txt">
+              <p>For man Tiffany T</p>
+
+              <span>Tiffany T 컬렉션은 구조적인 라인을 더한<br/>링과 커프스를 선보입니다.
+              </span>
+
+
+              <p class="award_btn">VIEW MORE</p>
+            </div>
+
+          </div>
+
+          <div class="award_r3">
+            <div class="award_r_txt">
+              <p>Tiffany's Eyewear</p>
+
+              <span>티파니의 시그니처 모티프가<br/>컨템포러리 아이웨어에 독특한 개성을 선사합니다.
+              </span>
+
+              <p class="award_btn">VIEW MORE</p>
+
+            </div>
+
+            <div class="award_r_img">
+              <img src="./images/bot_bn03.jpg" alt="">
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+
+    </div>
+  </main>
+
+  <footer>
+    <div class="footer">
+      <div class="ft_logo_wrap">
+        <div class="ft_logo"> <img src="./images/footer_logo.png" alt=""></div>
+      </div>
+
+      <div class="ft_menu">
+        <ul>
+          <li>STORE</li>
+          <li>MEMBERSHIP</li>
+          <li> APP Download</li>
+          <li> 공지사항</li>
+          <li>이용약관</li>
+          <li>관련 사이트</li>
+          <li> 티파니 재단</li>
+          <li>티파니 채용정보</li>
+        </ul>
+      </div>
+
+      <div class="ft_cs">
+        <div class="ft_l">
+          <p>고객센터 (A/S문의)1600-1111<br>
+            상담시간 : AM 09:00 ~ PM 06:00(토요일, 공휴일 휴무)<br>
+            Break time : PM 12:00 ~ PM 01:00<br>
+        </div>
+
+        <div class="ft_r">
+
+          <i><img src="./images/facebook.png" alt="페이스북"></i>
+          <i><img src="./images/blog.png" alt="블로그"></i>
+          <i><img src="./images/sns_icon05.png" alt=""></i>
+          <i><img src="./images/sns_icon07.png" alt=""></i>
+          <i><img src="./images/naver.png" alt=""></i>
+          <i></i>
+        </div>
+
+
+      </div>
+
+      <div class="ft_info">
+        <strong>티파니 신제품</strong>
+        <p>​티파니의 신제품 출시, 특별한 이벤트 및 매장 오픈 소식 등을 가장 먼저 받아보세요.</p>
+        <span>가입하기</span>
+      </div>
+
+      <div class="ft_bt">
+        주식회사 Tiffany & Co. <br>
+        주소 : 경기도 김포시 고촌읍 000-00000<br>
+        사업자등록번호 : 111-11-111111 <br>
+        판매업 : 2022-경기김포-11111<br>
+        대표 : 찰스 루이스 티파니 (Charles Lewis Tiffany)<br>
+        개인정보관리책임자 : 앤서니 르드뤼 (Anthony Ledru)<br>
+        호스팅 서비스 제공자 : (주)티파니앤코<br>
+      </div>
+
+    </div>
+  </footer>
+</body>
+
+</html> 

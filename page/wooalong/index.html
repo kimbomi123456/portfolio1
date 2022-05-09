@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>김보미_PCportfolio</title>
+<!-- css시트 -->
+<link rel="stylesheet" href="css/reset.css">
+<link rel="stylesheet" href="css/layout.css">
+<link rel="stylesheet" href="css/main.css">
+
+<!-- js   -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"
+  integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+<!--parallax-->
+<script src="js/parallax.min.js"></script>
+
+<!-- 폰트어썸 -->
+<script src="https://kit.fontawesome.com/f8a0a95034.js" crossorigin="anonymous"></script>
+
+<!-- 영문폰트 -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link
+  href="https://fonts.googleapis.com/css2?family=Marcellus&family=Noto+Sans+KR:wght@300;400;500;700;900&family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap"
+  rel="stylesheet">
+
+<!-- 스와이퍼 -->
+<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+<!--레터링js-->
+<script src="js/jquery.lettering-0.6.1.min.js"></script>
+
+<!--scrollmagic-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
+
+<!--gsap-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/animation.gsap.js"></script>
+
+<!--aos-->
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+<script src="js/custom.js"></script>
+</head>
+
+<body>
+
+<header>
+  <!-- 가운데 라인 -->
+  <span class="line_auto"></span>
+
+  <!-- 좌측 로고 -->
+  <div class="left_menu">
+    <h1 class="logo"><a href=""><img src="images/logo_en.png" alt=""></a></h1>
+    <ul>
+      <li><a href="javascript:void(0)" data-target=".main_top">HOME</a></li>
+      <li><a href="javascript:void(0)" data-target=".about">ABOUT</a></li>
+      <li><a href="javascript:void(0)" data-target=".img_center">BEST PRODUCT</a></li>
+      <li><a href="javascript:void(0)" data-target=".collecton">COLLECTION</a></li>
+      <li><a href="javascript:void(0)" data-target=".vid">VIDEO</a></li>
+      <li><a href="javascript:void(0)" data-target=".middle_3">REVIEW</a></li>
+      <li><a href="javascript:void(0)" data-target=".middle_5">SHOP</a></li>
+      <li><a href="javascript:void(0)" data-target=".middle_6">LOOKBOOK</a></li>
+    </ul>
+
+    <div class="ft_left_menu">
+      <ul>
+        <li>Instagram</li>
+        <li>LINE</li>
+        <li>Facebook</li>
+        <li>Twitter</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- 우측 메뉴 -->
+  <div class="right_nav">
+    <div class="hamburger">
+      <span></span>
+      <span></span>
+    </div>
+
+    <aside id="aside">
+      <!-- 카테고리 1 -->
+      <div id="accordion">
+        <!-- 카테고리 1 -->
+        <ul class="menu_ul">
+          <li class="menu_li">
+            <a href="javascript:void(0);" class="ctg_name">BEST PRODUCT</a>
+
+            <div class="sub_menu">
+              <ul>
+                <li><a href="javascript:void(0);" class="sub_item">OUTER</a></li>
+                <li><a href="javascript:void(0);" class="sub_item">TOP</a></li>
+                <li><a href="javascript:void(0);" class="sub_item">BOTTOM</a></li>
+                <li><a href="javascript:void(0);" class="sub_item">CAP</a></li>
+                <li><a href="javascript:void(0);" class="sub_item">ACC</a></li>
+                <li><a href="javascript:void(0);" class="sub_item">OUTER</a></li>
+              </ul>
+            </div>
+          </li>
+          <li class="menu_li">
+            <a href="javascript:void(0);" class="ctg_name">NEW PRODUCT</a>
+
+            <div class="sub_menu">
+              <ul>
+                <li><a href="javascript:void(0);" class="sub_item">OUTER</a></li>
+                <li><a href="javascript:void(0);" class="sub_item">TOP</a></li>
+                <li><a href="javascript:void(0);" class="sub_item">BOTTOM</a></li>
+                <li><a href="javascript:void(0);" class="sub_item">CAP</a></li>
+                <li><a href="javascript:void(0);" class="sub_item">OUTER</a></li>
+              </ul>
+            </div>
+          </li>
+
+          <li class="menu_li">
+            <a href="javascript:void(0);" class="ctg_name">
+              MEN
+            </a>
+            <div class="sub_menu">
+              <ul>
+                <li><a href="javascript:void(0)" class="sub_item">OUTER</a></li>
+                <li><a href="javascript:void(0)" class="sub_item">TOP</a></li>
+                <li><a href="javascript:void(0)" class="sub_item">BOTTOM</a></li>
+              </ul>
+            </div>
+          </li>
+
+          <li class="menu_li">
+            <a href="javascript:void(0);" class="ctg_name">
+              WOMEN
+            </a>
+
+            <div class="sub_menu">
+              <ul>
+                <li><a href="javascript:void(0)" class="sub_item">OUTER</a></li>
+                <li><a href="javascript:void(0)" class="sub_item">TOP</a></li>
+                <li><a href="javascript:void(0)" class="sub_item">BOTTOM</a></li>
+                <li><a href="javascript:void(0)" class="sub_item">CAP</a></li>
+                <li><a href="javascript:void(0)" class="sub_item">ACC</a></li>
+                <li><a href="javascript:void(0)" class="sub_item">OUTER</a></li>
+              </ul>
+            </div>
+          </li>
+
+          <li class="menu_li">
+            <a href="javascript:void(0);" class="ctg_name">SALE</a>
+            <div class="sub_menu">
+              <ul>
+                <li><a href="javascript:void(0)" class="sub_item">OUTER</a></li>
+                <li><a href="javascript:void(0)" class="sub_item">TOP</a></li>
+                <li><a href="javascript:void(0)" class="sub_item">BOTTOM</a></li>
+                <li><a href="javascript:void(0)" class="sub_item">CAP</a></li>
+                <li><a href="javascript:void(0)" class="sub_item">ACC</a></li>
+                <li><a href="javascript:void(0)" class="sub_item">OUTER</a></li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </aside>
+
+    <p class="shop" title="Account"><a href="">Account</a> </p>
+    <p class="shop_1" title="My page"><a href="">My pages</a></p>
+
+    <div class="top_btn"></div>
+
+  </div>
+</header>
+
+<main>
+  <div class="container">
+    <div class="main_top">
+      <div class="main_vis" id="scene01">
+        <img src="images/main_vis_2.png" alt="" data-depth="0.90">
+        <div class="main_bg" data-depth="0.6"></div>
+      </div>
+
+      <div class="main_txt" id="scene02">
+        <div class="line" data-depth="0.80">
+          <span class="line1_s">WEAR</span><br>
+          <span class="line2_s">Actual Life</span>
+
+        </div>
+      </div>
+
+    </div> <!-- 메인 탑 끝 -->
+
+    <div class="about">
+      <div class="mid_right" data-aos="fade-up" data-aos-duration="1500">
+        <div class="middle_right_inner">
+          <span class="mid_span">ABOUT</span>
+          <p class="mid_p">'Wear Actual Life (실제 생활을 입다)'</p>
+          <span class="mid_span1">
+            우알롱(WOOALONG)은 'Wear Actual Life (실제 생활을 입다)' 라는
+            슬로건을 바탕으로 2018년에 런칭한 룩이 아닌 옷을 제안하는 브랜드입니다.
+            슬로건을 바탕으로 2018년에 런칭한 룩이 아닌 옷을 제안하는 브랜드입니다. 편하고 좋은 소재로 다양한 서브컬처, 각자의 라이프스타일을
+            간결하고 섬세하게 표현하기 위해 늘 고민합니다.</span>
+
+          <span class="underline">
+            VIEW DETAILS
+            <span class="underline1"></span>
+          </span>
+        </div>
+      </div>
+
+      <div class="best_wrap">
+
+      
+      <!-- 이미지 크게 가운데 있는 영역 -->
+      <div class="img_center">
+
+        <div class="mid_left">
+          <em class="mid_tit">BEST PRODUCT</em>
+          <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <h1 class="mid_brand">Big logo beanie</h1>
+              </div>
+
+              <div class="swiper-slide">
+                <h1 class="mid_brand"> Signature Logo ball cap- RED</h1>
+              </div>
+
+              <div class="swiper-slide">
+                <h1 class="mid_brand">
+                  Signature Logo ball cap- NAVY</h1>
+
+              </div>
+
+              <div class="swiper-slide">
+                <h1 class="mid_brand">Signature hood zip-up - GREY</h1>
+              </div>
+
+              <div class="swiper-slide">
+                <h1 class="mid_brand">BARMACLASSIC</h1>
+              </div>
+
+              <div class="swiper-slide">
+                <h1 class="mid_brand">Wow fit arch embroidery logo hoodie - BLACK</h1>
+              </div>
+            </div>
+
+            <div class="gazing"><span></span></div>
+          </div>
+          <span class="underline">
+            VIEW DETAILS
+            <span class="underline1"></span>
+          </span>
+        </div>
+
+        <div class="mid_bottom">
+          <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img src="images/bt_1.jpg" alt="">
+              </div>
+
+              <div class="swiper-slide">
+                <img src="images/bt_2.jpg" alt="">
+              </div>
+
+              <div class="swiper-slide">
+                <img src="images/bt_3.jpg" alt="">
+
+              </div>
+
+              <div class="swiper-slide">
+                <img src="images/bt_4.jpg" alt="">
+              </div>
+
+              <div class="swiper-slide">
+                <img src="images/bt_5.jpg" alt="">
+              </div>
+
+              <div class="swiper-slide">
+                <img src="images/bt_6.jpg" alt="">
+              </div>
+            </div>
+            
+          </div>
+        </div>
+
+      </div>
+
+      <div class="bg_txt">
+        <div class="swiper-container swiper-container-free-mode">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide"> NEW ARRIVALS BRANDNEW ITEMS  NEW ARRIVALS
+            </div>
+            <div class="swiper-slide"> NEW ARRIVALS BRANDNEW ITEMS  NEW ARRIVALS
+            </div>
+            <div class="swiper-slide"> NEW ARRIVALS BRANDNEW ITEMS  NEW ARRIVALS
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+
+    <!-- COLLECTION 영역 -->
+    <h1 class="COL_title">COLLECTION</h1>
+    <div class="collecton">
+      <div class="collecton_inner">
+        <!-- tp--cl__list js-pos js-tdg is-v와 같은 역할 -->
+        <div class="col_wrap fis">
+
+          <div class="collecton_prd">
+            <p class="prd_txt_p1">Signature reflective padding</p>
+            <div class="img_bg">
+              <img src="images/collecton_1.jpg" alt="">
+            </div>
+            <p class="bg_txt">
+              <span class="price_1">299,000 원</span><br>
+              <span class="price_2">179,400 원</span>
+            </p>
+          </div>
+          <div class="collecton_prd">
+            <p class="prd_txt_p1">Signature boiling fleece zip-up</p>
+            <div class="img_bg">
+              <img src="images/collecton_2.jpg" alt="">
+            </div>
+            <p class="bg_txt">
+              <span class="price_1">299,000 원</span><br>
+              <span class="price_2">179,400 원</span>
+            </p>
+          </div>
+          <div class="collecton_prd">
+            <p class="prd_txt_p1">Fleece mix jacket</p>
+            <div class="img_bg">
+              <img src="images/collecton_3.jpg" alt="">
+            </div>
+            <p class="bg_txt">
+              <span class="price_1">299,000 원</span><br>
+              <span class="price_2">179,400 원</span>
+            </p>
+          </div>
+
+        </div>
+        <div class="col_wrap sec">
+          <div class="collecton_prd">
+            <p class="prd_txt_p1">Cut out leather shirt</p>
+            <div class="img_bg">
+              <img src="images/collecton_4.jpg" alt="">
+            </div>
+            <p class="bg_txt">
+              <span class="price_1">299,000 원</span><br>
+              <span class="price_2">179,400 원</span>
+            </p>
+          </div>
+
+          <div class="collecton_prd">
+            <p class="prd_txt_p1">Women slice cardigan</p>
+            <div class="img_bg">
+              <img src="images/collecton_5.jpg" alt="">
+            </div>
+            <p class="bg_txt">
+              <span class="price_1">299,000 원</span><br>
+              <span class="price_2">179,400 원</span>
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- /*---컬렉션 이너 끝-*/ -->
+      <div class="viewall">
+        <p class="viewall_p">VIEW ALL</p>
+      </div>
+    </div>
+
+    <div class="vid">
+    <div class="videowrapper">
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/zR4mmItClj4?autoplay=1&mute=1&controls=0&amp;start=19" title="YouTube video player" frameborder="0" allow="autoplay"></iframe>
+   </div>
+
+</div>
+
+    <!-- 원래 미들 3 영역 (news) -->
+    <div class="middle_3" data-aos="fade-up" data-aos-duration="1000">
+      <div class="left_area">
+        BEST REVIEW
+      </div>
+
+      <ul class="right_area">
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div><span class="days">2021.06.21<br>
+                  ID:8트블랙 남성, 178cm, 70kg</span>
+                <p class="right_area_p">색깔도 맘에들고 길이도 좋아요 검정색있는데 핏 좋아서 또 구매했습니당
+                </p>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div><span class="days"> 2022-01-20<br> ID:7ksh4908 남성, 174cm, 62kg</span>
+                <p class="right_area_p">후회 절대 안하실거에요</p>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div><span class="days">2021.04.02<BR> ID:5리오동생 남성, 175cm, 62kg</span>
+                <p class="right_area_p">사진과 흡사합니다.
+                  데일리로 편하게입습니다!</p>
+                </div>
+            </div>
+            <div class="swiper-slide">
+              <div><span class="days">2022.01.05<br>ID:5호미콩 남성, 171cm, 67kg</span>
+                <p class="right_area_p">제가 입었던 조거팬츠 중에 재질도 좋고 예쁜거같네요 ^^</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </ul>
+    </div>
+
+
+    <div class="middle_4">
+      <div class="left">
+        <div class="left_inner bg_effect">
+          <em class="mid4_em">EVENT</em>
+          <p class="mid4_p">진행중인 이벤트 보러가기<br>
+            2022년 새해 설 기념 이벤트 진행중 ! <br>
+            다양한 할인 이벤트를 만나보세요.<br>
+
+          </p>
+          <button class="right_btn">→</button>
+          <div class="hover_bg">
+            <img src="images/hover_bg01.png" alt="">
+          </div>
+        </div>
+
+      </div>
+
+      <div class="right">
+        <div class="right_inner bg_effect">
+          <em class="mid4_em">STORE</em>
+          <p class="mid4_p">
+            오프라인 매장 안내<br>
+            스타일리시한 우알롱의 <br>다양한 상품들을 직접 만나보세요.<br>
+          </p>
+          <button class="right_btn">→</button>
+          <div class="hover_bg">
+            <img src="images/hover_bg02.png" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 온라인 샵 영역 -->
+    <div class="txt_01">
+      <p class="ani_txt">new product</p>
+    </div>
+
+    <div class="middle_5" data-aos="fade-up" data-aos-duration="1000">
+      <img src="images/lookbook_6.jpg" alt="">
+      <p>ONLINE SHOP</p>
+     <a href="https://wooalong.co.kr/page/collection/2022_01_view.html"> <button class="right_btn">→</button></a>
+    </div>
+
+    <div class="middle_6">
+      <div class="md_6_tit">
+        <p class="typ_txt">LOOKBOOK</p>
+        <span class="typing"></span>
+      </div>
+
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img src="images/lookbook_1.jpg" alt="">
+          </div>
+
+          <div class="swiper-slide">
+            <img src="images/lookbook_2.jpg" alt="">
+          </div>
+          <div class="swiper-slide">
+            <img src="images/lookbook_3.jpg" alt="">
+          </div>
+          <div class="swiper-slide">
+            <img src="images/lookbook_5.jpg" alt="">
+          </div>
+          <div class="swiper-slide">
+            <img src="images/lookbook_8.jpg" alt="">
+          </div>
+          <div class="swiper-slide">
+            <img src="images/lookbook_7.jpg" alt="">
+          </div>
+          <div class="swiper-slide">
+            <img src="images/lookbook_4.jpg" alt="">
+          </div>
+          <div class="swiper-slide">
+            <img src="images/shop.jpg" alt="">
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+
+    <div class="circle"></div>
+
+</main>
+
+<footer>
+  <div class="footer">
+    <div class="ft_info">
+      <ul class="ft_info_1">
+        <li>Home</li>
+        <li>BRAND</li>
+        <li>CONCEPT</li>
+        <li>COMPANY</li>
+      </ul>
+
+      <ul class="ft_info_2">
+        <li>COLLECTION</li>
+        <li>NEWS</li>
+        <li>STORE</li>
+        <li>RECRUIT</li>
+      </ul>
+
+      <ul class="ft_info_3">
+        <li>PRIVACY POLICY</li>
+        <li class="contact">CONTACT</li>
+      </ul>
+    </div> <!-- ft_info 닫는 태그 -->
+
+    <div class="ft_bottom">
+      <div class="ft_logo_img">
+        <h1 class="ft_logo"><a href=""><img src="images/woo_logo_03.png" alt=""></a></h1>
+      </div>
+
+      <div class="ft_date">
+        <span>(주) WOOALONG<br>
+          C. Song Jung-wook, Kang Ho-yong<br>
+          B.375-81-02099<br>
+          A. 3F 7, Yeonmujang 5ga-gil, Seongdong-gu, Seoul, Republic of Korea.<br>
+          O. 2021 - Seongdong, Seoul - 02327<br>
+          E. wooalong@wooalong.comT. 070-4109-5360</span>
+      </div>
+    </div>
+
+</footer>
+
+</body>
+
+</html>

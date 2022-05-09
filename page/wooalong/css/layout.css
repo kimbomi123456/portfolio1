@@ -1,0 +1,387 @@
+
+.container {
+  overflow-x: hidden;
+  overflow-y: visible;
+}
+
+
+/*마우스 효과*/
+body {
+  position: relative;
+}
+
+body .circle {
+  position: absolute;
+  width: 70px;
+  height: 70px;
+  top: 50%;
+  left: 50%;
+  margin: -75px 0 0 -75px;
+  mix-blend-mode: overlay;
+  background: rgba(0,0,0,.3);
+  border-radius: 100%;
+  backface-visibility: hidden;
+  z-index: 999;
+}
+
+div {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-weight: inherit;
+  vertical-align: baseline;
+  background-color: transparent;
+}
+
+body {
+  display: block;
+  font-family: 'Marcellus', 'Noto Sans KR', sans-serif;
+  font-weight: 400;
+}
+
+/* 헤더 */
+header {}
+
+/* 우측 메뉴 */
+header .right_nav {
+  position: relative;
+}
+
+.right_nav .hamburger {
+  width: 50px;
+  position: fixed;
+  right: 50px;
+  top: 50px;
+  z-index: 99999;
+}
+
+.right_nav .hamburger span {
+  position: relative;
+  display: block;
+  height: 2px;
+  transition: transform 0.6s cubic-bezier(0.36, 0.14, 0, 1);
+  background-color: #000;
+  margin-bottom: 15px;
+  z-index: 99999;
+}
+
+.right_nav .hamburger.on span {
+  position: relative;
+  transition: all 0.5s;
+}
+
+.right_nav .hamburger.on span:after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 100%;
+  background-color: #fff;
+  height: 2px;
+  transition: all 0.5s;
+}
+
+.right_nav .hamburger.on span:first-child {
+  transform: translate(0, 11px) rotate(45deg);
+}
+
+.right_nav .hamburger.on span:last-child {
+  transform: translate(0, -7px) rotate(-45deg);
+}
+
+.right_nav #aside {
+  position: fixed;
+  top: 0;
+  right: -100%;
+  width: 70%;
+  box-sizing: border-box;
+  height: 100%;
+  overflow-x: hidden;
+  background-color: #000;
+  cursor: pointer;
+  transition: all 1s;
+  opacity: 0;
+  z-index: 9999;
+  text-align: right;
+}
+
+.right_nav #aside.on {
+  right: 0;
+  opacity: 1;
+  z-index: 999;
+  transition: all 1s;
+  display: inline-block;
+  width: 35%;
+  line-height: 1;
+  color: #fff;
+  
+}
+
+#aside #accordion {
+  position: absolute;
+  top: 20%;
+  right: 150px;
+}
+
+#aside #accordion .menu_ul {
+  display: block;
+  width: 100%;
+}
+
+#aside #accordion .menu_ul .menu_li {
+  display: block;
+  width: 100%;
+  line-height: 30px;
+}
+
+
+#aside #accordion .menu_ul .menu_li .ctg_name {
+  margin: 0px auto;
+  width: 100%;
+  font-size: 40px;
+  color: #fff;
+  background-color: #000;
+  line-height: 50px;
+  position: relative;
+  height: 100%;
+  line-height: 1.5;
+  opacity: 1;
+}
+#aside #accordion .menu_ul .menu_li .ctg_name:after{
+  content: '';
+  display: block;
+  position: absolute;
+  left: 0;
+  bottom: 0px;
+  width: 100%;
+  height: 2px;
+  background-color: #fff;
+  transform-origin: 0 50%;
+  transform: scale(1, 0);
+  transition: transform 1s cubic-bezier(0.36, 0.3, 0, 1);
+}
+
+#aside #accordion .menu_ul .menu_li .ctg_name:hover:after{
+  transform: scale(0, 1);
+  transform-origin: 100%;   
+}
+
+/* 우측 메뉴 내 서브 메뉴 */
+#aside #accordion .menu_ul .menu_li .sub_menu {
+  height: 0;
+  display: block;
+  width: 100%;
+  overflow: hidden;
+}
+
+#aside #accordion .menu_ul .menu_li .sub_menu>ul {
+  color: #fff;
+  background-color: #000;
+  width: 100%;
+  display: block;
+  text-align: right;
+}
+
+#aside #accordion .menu_ul .menu_li .sub_menu>ul>li {
+  display: block;
+  padding: 5px;
+}
+
+#aside #accordion .menu_ul .menu_li .sub_menu>ul>li .sub_item {
+  font-size: 15px;
+  transition: all .6s;
+  opacity: 1;
+  display: inline-block;
+  width: 100%;
+  background-color: #000;
+  color: #fff;
+}
+
+/* @keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translate3d(0, 100%, 0);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateZ(0);
+  }
+} */
+header .right_nav .shop {
+  font-size: 16px;
+  color: #000;
+  display: block;
+  transition: all 0.3s;
+  text-align: center;
+  transform: rotate(90deg);
+  position: fixed;
+  right: 50px;
+  top: 50%;
+  z-index: 11;
+}
+
+header .right_nav .shop_1 {
+  font-size: 16px;
+  color: #000;
+  display: block;
+  text-align: center;
+  transform: rotate(90deg);
+  position: fixed;
+  right: 50px;
+  bottom: 30%;
+  z-index: 11;
+}
+
+.right_nav .top_btn {
+  width: 30px;
+  bottom: 50px;
+  right: 50px;
+  height: 30px;
+  border-bottom: 1px solid #000;
+  border-left: 1px solid #000;
+  transform: rotate(135deg);
+  background-color: transparent;
+  position: fixed;
+  z-index: 9;
+  opacity: 0;
+  transition: all .3s;
+}
+
+/* down 클래스 추가  */
+.right_nav .top_btn.down {
+  opacity: 1;
+  transition: all .5s;
+}
+
+/* 좌측 메뉴 */
+.left_menu {
+  position: fixed;
+  top: 85px;
+  left: 100px;
+  height: 100%;
+  text-align: left;
+  color: #000;
+  z-index: 99;
+}
+.left_menu h1.logo{
+  padding-bottom: 40%;
+}
+
+.left_menu ul li {
+  padding: 10px 0;
+  font-size: 15px;
+  color: #000;
+}
+
+.left_menu ul li>a {
+  position: relative;
+ 
+}
+
+.left_menu ul li>a::after {
+  content: '';
+  display: block;
+  position: absolute;
+  left: 0;
+  bottom: 0px;
+  width: 100%;
+  height: 2px;
+  background-color: #000;
+  transform-origin: 0 100%;   
+  transform: scale(1, 0);
+  transition: transform 0.6s cubic-bezier(0.36, 0.14, 0, 1);
+}
+
+.left_menu ul li>a:hover:after {
+  transform: scale(0, 1);
+  transform-origin: 100% ;   
+}
+
+.left_menu>.ft_left_menu {
+  text-align: left;
+  color: #000;
+  line-height: 1;
+  font-style: normal;
+  position: absolute;
+  bottom: 15%;
+}
+
+/* 푸터 */
+footer {
+  width: 100%;
+}
+
+footer .footer {
+  color: #000;
+  width: 100%;
+  background-color: #000;
+  text-align: center;
+}
+
+footer .footer .ft_info {
+  max-width: 1200px;
+  width: 90%;
+  background-color: #000;
+  font-size: 41px;
+  padding: 7% 0;
+  display: inline-block;
+  color: #fff;
+  margin: 10px auto;
+}
+
+footer .footer .ft_info .ft_info_1,
+footer .footer .ft_info .ft_info_2,
+footer .footer .ft_info .ft_info_3 {
+  margin: 2% auto;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+}
+
+
+footer .footer .ft_info .ft_info_1>li,
+footer .footer .ft_info .ft_info_2>li,
+footer .footer .ft_info .ft_info_3>li {
+  font-size: 50px;
+  color: #fff;
+}
+
+footer .footer .ft_info .ft_info_2>li:last-child {
+  float: right;
+}
+
+footer .footer .ft_bottom {
+  width: 100%;
+  overflow: hidden;
+  color: #000;
+  background-color: #fff;
+  margin: 0 auto;
+  padding: 50px 0 80px;
+}
+
+footer .footer .ft_bottom .ft_logo_img {
+  float: left;
+  width: 50%;
+  padding: 45px 0;
+  vertical-align: middle;
+  object-fit: cover;
+  display: block;
+}
+
+footer .footer .ft_bottom .ft_logo_img>img {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+footer .footer .ft_bottom .ft_date {
+  width: 50%;
+  float: right;
+  padding-top: 30px;
+  display: block;
+  line-height: 30px;
+  color: #000;
+  font: 15px;
+  text-align: left;
+}
